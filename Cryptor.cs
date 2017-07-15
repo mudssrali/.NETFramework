@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 using System.Text;
-namespace Project_Management_System
+namespace Cryptography
 {
     class Cryptor
     {
