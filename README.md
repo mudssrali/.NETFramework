@@ -1,16 +1,18 @@
 # Generating Thumbnail
 **Note**: Please add following **_Nuget Pakage_** for ShellFile class.
-```
-[Download required nuget package](https://www.nuget.org/packages/WindowsAPICodePack-Shell)
 
-```
+[Click here to download required nuget package](https://www.nuget.org/packages/WindowsAPICodePack-Shell)
+
 **Getting Thumbnail on Client Side using JavaScript**
 ```
-<img src='http://localhost:14125/api/FileData/GetThumbnail?uniqueName="+FileUniqueName+"' style='width:10%; height:3%'>
+<img src='http://localhost:14125/api/action/GetThumbnail?uniqueName="+FileUniqueName+"' style='width:10%; height:3%'>
 ```
 
+
 **Cryptography**
+
 It has two basic functions called Encryption &amp; Decryption. This cryptography is according to the Electronic Codebook(ECB) mode.
+
 # Email Sending using C# in .NET Framework
 **.config file settings**
 Put these key pair in the config file under AppSettings <AppSettings>
