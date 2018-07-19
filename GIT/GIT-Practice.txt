@@ -1,0 +1,36 @@
+---------------------------------------------------------------------
+Merging branches:
+
+git checkout b2
+git merge b1
+---------------------------------------------------------------------
+
+Merge types:
+a. fast-forward (just pointer, start pointing to brach head)
+b. with conflict
+c. without conflict
+
+---------------------------------------------------------------------
+
+git reset HEAD <FILENAME> (Unstagging file/s)
+git checkout <FILENAME>
+
+---------------------------------------------------------------------
+
+git show (To show commit details)
+
+---------------------------------------------------------------------
+POINTERS:
+on pull, pointer
+a. remote/b1 ----------> b1 (comparison btw local and remote)
+b. remote/b2 ----------> b2 (comparison btw local and remote)
+
+---------------------------------------------------------------------
+
+Creating repo
+a. git init
+b. git clone
+
+---------------------------------------------------------------------
+Showing commit
+git log -2 (specified no. of commits)
