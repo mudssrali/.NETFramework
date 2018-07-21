@@ -4,13 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Delegates
+namespace Lambda
 {
-    public class Test4
+    public class LambdaExpression
     {
         delegate int TestDelegate(int a);
         delegate int Test2Delegate(int a,int b);
-        public void PerformTest()
+        public static void Main()
         {
             //Using Anonymous functions
             TestDelegate func = delegate(int k) {
@@ -67,7 +67,7 @@ namespace Delegates
             Console.WriteLine("Result is:{0}", result);
         }
 
-        private Boolean FindMod(int a)
+        private static Boolean FindMod(int a)
         {
             if (a % 4 == 0)
                 return true;
@@ -75,7 +75,7 @@ namespace Delegates
                 return false;
         }
 
-        int CustomFind(int[] data, Predicate<int> p)
+        private static int CustomFind(int[] data, Predicate<int> p)
         {
             for (int i = 0; i < data.Count(); i++)
             {
@@ -88,3 +88,13 @@ namespace Delegates
 
     }
 }
+/*
+[OUTPUT]
+Result is:10
+Result is:14
+Result is:10
+Result is:100
+Result is:20
+Result is:20
+Result is:20 
+*/

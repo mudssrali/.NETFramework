@@ -21,6 +21,8 @@ namespace DelegateAppl {
       static void Main(string[] args) {
          //create delegate instances       
          NumberChanger nc1 = new NumberChanger(AddNum);
+         //var nc3 = AddNum;
+
          NumberChanger nc2 = new NumberChanger(MultNum);
          
          //calling the methods using the delegate objects

@@ -45,7 +45,7 @@ namespace Delegates
             }
         }
 
-        public void PerformTest()
+        public void  PerformTest()
         {
             MyStringWriter obj1 = new MyStringWriter(ConsoleWriter);
             obj1.Subscribe(FileWriter);

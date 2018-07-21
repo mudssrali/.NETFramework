@@ -26,14 +26,14 @@ class TestingDelegate
         Del d1 = MethodClass.Method1;
         Del d2 = MethodClass.Method2;
         Del d3 = DelegateMethod;
-
+        //var d4 = new Del(DelegateMethod);
         //Both types of assignment are valid.
         Del allMethodsDelegate = d1 + d2 +d3;
         //allMethodsDelegate += d3;
         // calling 3 
         allMethodsDelegate("Multicasting");
         // removing method from delegate
-        allMethodsDelegate-=d2;
+        allMethodsDelegate-=d3;
         Console.WriteLine("After removing d2");
         allMethodsDelegate("After downcasting");
 

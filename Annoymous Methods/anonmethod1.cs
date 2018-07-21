@@ -11,19 +11,19 @@ namespace Delegates
      */
     public delegate int MyFunc(int amount);
 
-    class Test1
+   public class Test1
     {
         
-        int SquareFinder(int number)
+        public static int SquareFinder(int number)
         {
             return (number * number);
         }
-        int SquareFinder1(int number)
+        public static int SquareFinder1(int number)
         {
             return (number * number);
         }
 
-        public void PerformTest()
+        public static void PerformTest()
         {
             MyFunc f = new MyFunc(SquareFinder);
             var result = f(5);
@@ -38,13 +38,13 @@ namespace Delegates
             f += SquareFinder1;
             result = f(7);
             Console.WriteLine("Result is {0}", result);
-
+            // Down casting
             f -= SquareFinder1;
             result = f(8);
             Console.WriteLine("Result is {0}", result);
         }
 
-         public void PerformTest2()
+         public static void PerformTest2()
          {
              /*
               * Anonymous methods provide a technique to pass a code block as a delegate parameter. 
@@ -53,6 +53,7 @@ namespace Delegates
 
              MyFunc f = delegate(int a)
              {
+
                  return a * a;
              };
 
@@ -68,6 +69,10 @@ namespace Delegates
              var result1 = f(5);
              Console.WriteLine("Result is:{0}", result1);
 
+         }
+         public static void  Main()
+         {
+             PerformTest2();
          }
     }
 }
