@@ -28,6 +28,19 @@ namespace ContactDirectory.Controllers
             return RedirectToAction("ContactAdd","ContactAdd");
         }
 
+        [HttpPost]
+        public JsonResult SaveContactViaAjax ( String Name, String Email, String Phone )
+        {
+            var dto = new ModelManager();
+
+            dto.Name = Name;
+            dto.Email = Email;
+            dto.Phone = Phone;
+
+            int ret = save( dto );
+            return Json( new { msg = "New contact add successfully" }, JsonRequestBehavior.AllowGet );
+        }
+
         private Int32 save ( ModelManager dto )
         {
             //using string interpolation technique to make prepared query

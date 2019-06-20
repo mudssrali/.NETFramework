@@ -13,8 +13,10 @@ namespace ContactDirectory.Controllers
         // GET: ViewContacts
         public ActionResult ViewContacts()
         {
+            // using model approach, viewbag can be used instead
+            var contactList = GetAllContacts();
             
-            return View();
+            return View(contactList);
         }
 
         private List<ModelManager> GetAllContacts ( )

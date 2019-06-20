@@ -8,24 +8,67 @@
         <div class="text-center">
             <h2>Add New Contact</h2>
         </div>
-        <p style="color:darkgreen" ; id="error">@ViewBag.MsgResponse</p>
+        <p style="color:darkgreen;" id="status">@ViewBag.MsgResponse</p>
         <form id="contact_form" method="post" action="@Url.Action("SaveContact","ContactAdd")">
             <div class="row">
                 <label for="name"></label>
-                <input type="text" name="Name" class="form-control" placeholder="Enter name" required />
+                <input id="name" type="text" name="Name" class="form-control" placeholder="Enter name" required />
             </div>
             <div class="row">
                 <label for="email"></label>
-                <input type="email" name="Email" class="form-control" placeholder="Enter email" required />
+                <input id="email" type="email" name="Email" class="form-control" placeholder="Enter email" required />
             </div>
             <div class="row">
                 <label for="name"></label>
-                <input type="text" name="Phone" class="form-control" placeholder="Enter phone" required />
+                <input id="phone" type="text" name="Phone" class="form-control" placeholder="Enter phone" required />
             </div>
             <div class="row" style="padding-top:2%;">
                 <button class="btn btn-primary" type="submit">Add Contact</button>
+            </div>
+            <div class="row" style="padding-top:2%;">
+                <button class="btn btn-primary" id="btnsaveajax" type="button">Add Contact Via AJAX</button>
             </div>
         </form>
     </div>
 </div>
 
+@section scripts{
+    <script>
+        $(document).ready(function () {
+
+            $("#btnsaveajax").click(function () {
+
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var phone = $("#phone").val();
+
+                $.ajax({
+
+                    url: "/ContactAdd/SaveContactViaAjax/",
+                    type: "post",
+                    dataType: "json",
+                    async: true,
+                    data: {
+                        Name: name,
+                        Email: email,
+                        Phone: phone,
+                    },
+
+                    success: function (Response) {
+                        $("#status").text(Response["msg"]);
+                        //console.log(Response["msg"]);
+                    },
+
+                    error: function (Response)
+                    {
+                        console.log("Unable to save cotact");
+                    }
+
+
+                });
+
+            });
+
+        });
+    </script>
+   }

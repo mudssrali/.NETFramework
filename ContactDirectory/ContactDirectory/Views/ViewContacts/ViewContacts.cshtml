@@ -1,4 +1,4 @@
-﻿
+﻿@model List<ContactDirectory.Models.ModelManager>
 @{
     ViewBag.Title = "View Contacts";
 }
@@ -22,12 +22,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>45</td>
-                        <td>Mudassar</td>
-                        <td>Mudassaralics007@gmail.com</td>
-                        <td>Phone</td>
-                    </tr>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.Name</td>
+                            <td>@item.Email</td>
+                            <td>@item.Phone</td>
+                        </tr>
+                    }
                 </tbody>
 
             </table>
