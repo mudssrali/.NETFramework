@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Add Contact";
+}
+
+<div class="col-lg-6 col-lg-offset-3" style="margin-top:7%">
+    <div class="jumbotron">
+        <div class="text-center">
+            <h2>Add New Contact</h2>
+        </div>
+        <p style="color:darkgreen" ; id="error">@ViewBag.MsgResponse</p>
+        <form id="contact_form" method="post" action="@Url.Action("SaveContact","ContactAdd")">
+            <div class="row">
+                <label for="name"></label>
+                <input type="text" name="Name" class="form-control" placeholder="Enter name" required />
+            </div>
+            <div class="row">
+                <label for="email"></label>
+                <input type="email" name="Email" class="form-control" placeholder="Enter email" required />
+            </div>
+            <div class="row">
+                <label for="name"></label>
+                <input type="text" name="Phone" class="form-control" placeholder="Enter phone" required />
+            </div>
+            <div class="row" style="padding-top:2%;">
+                <button class="btn btn-primary" type="submit">Add Contact</button>
+            </div>
+        </form>
+    </div>
+</div>
+
