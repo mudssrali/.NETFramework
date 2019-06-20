@@ -13,7 +13,7 @@ namespace ContactDirectory.Controllers
         [HttpGet]
         public ActionResult ContactAdd ( )
         {
-            ViewBag.MsgResponse = ViewBag.Message;
+            ViewBag.MsgResponse = TempData["Message"]!=null?TempData["Message"].ToString():"";
             return View();
         }
         
@@ -23,9 +23,9 @@ namespace ContactDirectory.Controllers
         {
             int ret = save( dto );
 
-            ViewBag.Message = ret == 1 ? "New contact added successfully" : "unable to add new contact";
-
-            return RedirectToAction("AddContact");
+            TempData["Message"]  = ret == 1 ? "New contact added successfully" : "unable to add new contact";
+    
+            return RedirectToAction("ContactAdd","ContactAdd");
         }
 
         private Int32 save ( ModelManager dto )
