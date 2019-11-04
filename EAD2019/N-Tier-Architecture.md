@@ -14,4 +14,4 @@ Here are some points to understand
 
 ### Working with Class Library
 
-I will discuss late, how we can create an application (web based or Desktop based appplication e.g. Winforms app) and consume `Class Library` into it with aforementioned N-Tier Architecture.
+Note - I will discuss later, how we can create an application (web based or Desktop based appplication e.g. Winforms app) and consume `Class Library` into it with aforementioned N-Tier Architecture.
