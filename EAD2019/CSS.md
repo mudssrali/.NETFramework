@@ -1,4 +1,4 @@
-# Intro to CSS - Cacading style sheet
+# Intro to CSS - Cascading Style Sheet
 
 CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features
 
@@ -134,3 +134,5 @@ Following are the position properties
 - **fixed** - An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled 
 - **absolute** - An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed)
 - **sticky** - An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position.
+
+For more details check [CSS - POSITIONING](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
