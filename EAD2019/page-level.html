@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+        <head>
+            <title>Example</title>
+            <style>
+                /*tag based styling - make all headings of type h1 underlined*/
+                h1 {
+                    text-decoration: underline;
+                }
+                /*class based styling - make all elements having class make-center align centered*/
+                .make-center {
+                    text-align: center;
+                }
+                /*id based styling - make all elements font bold having id make-bold*/
+                #make-bold {
+                    font-weight: bold;
+                }
+                /*attribute based styling - make all anchor (link) tags background yellow*/
+                a[target] {
+                    background-color: yellow;
+                }
+                /*attribute*/
+                a[target="_blank"] {
+                    background-color: yellow;
+                }
+                
+                /* mixture of above - any element that having child or children anchor (`<a></a>`), make their text color blue*/
+                .make-blue a {
+                    color: blue;
+                }
+
+            </style>
+        </head>
+        <body>
+            <main class="make-center">
+                <h1>HTML Page</h1>
+                <p id="make-bold">This is a basic web page.</p>
+                <a href="https://twitter.com/voidwebdev" target="_blank">Follow me on Twitter</a>
+            </main>
+        </body>
+    </html>
