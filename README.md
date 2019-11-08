@@ -10,3 +10,4 @@ Here is the list of Contents for Course EAD 2019
 - [Intro to HTML](./EAD2019/HTML.md)
 - [Intro to CSS](./EAD2019/CSS.md)
 - [Intro to JS](./EAD2019/JS.md)
+- [HTML, CSS & JS Quiz](./EAD2019/quiz-web.md)
