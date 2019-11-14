@@ -1,6 +1,10 @@
 # Intro to CSS - Cascading Style Sheet
 
-CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features
+CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
+
+`OR`
+
+Cascading Style Sheets (CSS) are used to paint, format, and layout web pages. Their capabilities span concepts as simple as text color to 3D perspective.
 
 There are three different ways to apply CSS to an HTML document that you'll commonly come across
 
