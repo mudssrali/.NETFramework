@@ -1,0 +1,334 @@
+
+Lecture Notes
+Lab: Monday 1:30pm to 5:00pm
+
+
+Instructor: Muhammad Usman(m.usman@pucit.edu.pk)
+
+
+TAs:  Hina &Almas
+
+
+Lecture #1&2
+
+General Discussion
+Introduction to course
+Introduction to Course
+Evaluation
+Quiz
+Test
+Assignments
+Class Participation
+Mid Term
+Final Term
+Enterprise Application
+Introduction to .NET Framework
+Microsoft Development Pre-2000 Ear
+Visual Studio (1-6)
+Visual Basic 1-6
+ASP (uses Visual Basic as programming Language)
+Microsoft Development Post-2000 era
+.NET Framework (1.0, 2.0,3.0,3.5,4.0,4.5,4.6.1,4.6.2,4.7.1) => Only for windows
+.NET Core (1.0, 2.0) => Multi Platform supported
+Visual Studio.NET
+Visual Studio 2001, 2003, 2005, 2008, 2010, 2012,2013,2015,2017,2019
+MSIL (Microsoft Intermediate Language)
+CLR (Common Language Runtime)
+When a “Project” is compiled in .NET, it produces an “assembly” file
+Assembly: It contains MSIL + metadata of assembly
+Assembly can be DLL (Dynamic Link Library), without Main method
+Assembly can be EXE (Executable), with Main or Entry Point
+A Solution File is a text (XML) based file which contains information of projects
+A project file (.csproj for example) is a text (XML) based file which contains information about items of that project.
+One solution may have many projects
+A namespace is a logical partitioning of types (like we have blocks in society)
+How to create a new Console Application
+What is the use of “using” statement at top
+Reading from & writing to Console
+Usage of Convert class
+Implicit & Explicit type casting
+Conditional Statement in c#
+Loops in c#
+Functions
+Array, Multi-dimensional array, Jagged array
+Solution Explorer, Output window, Watch window, Toolbox, Properties Window
+Static variable, method, class
+Access specifiers
+Abstract and virtual method
+Inheritance
+Polymorphism
+
+
+Lecture 3&4
+
+Use of getters setters
+Adding multiple projects in solution
+Assembly manifest(Exe vs dll)
+Inter application interaction
+Set as startup
+Database configuration with application
+Using statement
+Multiplying
+System.Data
+System.Data.SqlClient
+SqlConnection
+SqlCommand
+DataReader
+ExecuteReader
+ExecuteNonQuery
+
+Please explore DataAdapter by yourself.
+
+
+Lecture 3&4
+
+var keyword in C#
+Introduction to Layered Architecture
+Class Libraries
+Windows Form Applications
+Use of properties and events of tools
+
+Lecture 5&6
+
+
+Practice of windows form applications and ado.net
+Quiz
+General Discussion
+
+Lecture 7
+
+Introduction to HTML
+Tag
+Attribute
+Block element vs. Non-Block Element
+Elements who have any impact in renderings vs. elements who doesn’t have
+Client Server Architecture
+Thin Client - Thick Server
+Thick Client - Thin Server
+Client side examples
+Browser
+Mobile App
+Desktop App
+Examples of Web Servers
+Apache
+IIS (Internet Information Services)
+Tomcat
+Examples of Server side environments/programming languages
+PHP
+JSP (Java Server Pages)
+ASP (Active Server Pages)
+ASP.NET
+NodeJS (JavaScript server side environment)
+Python
+RoR         
+Browser Main components
+HTML Renderer
+CSS Engine
+JavaScript Engine
+HTTP (Hypertext Transfer Protocol)
+Request Response Protocol
+Request goes to Server, Processed there and Response is returned to the client (browser for example)
+HTTP Port => 80
+HTTPS Port => 443
+
+Introduction to CSS (Cascading Style Sheet)
+How CSS can be written
+Inline
+At Page level using <Style> tag
+In separate .css file
+CSS Rules/Selectors
+Tag based
+Class based
+ID based
+Attribute based
+Mixture of above
+Plus many other rules exist
+CSS BOX Model
+
+Border
+Padding
+Margin
+Content
+    
+    Positioning
+    Static
+    Fixed
+    Relative
+    Absolute
+
+Lecture 8
+
+
+Introduction to JavaScript
+
+Inline
+Internal (using <script> tag>
+External (in a file with .js extension)
+
+Client side programming language
+Server side version is called NodeJS
+“var” keyword
+Global variable (global object is “window” in browser)
+Data Types
+    Number
+    Boolean
+    Undefined
+    Null
+    String
+    Date
+    Array
+    Object
+Conditional Statements & Loops
+If, if else
+Switch
+For loop
+While, do while
+functions
+
+Arrays
+Associative Arrays (Key based)
+For-in loop
+Object
+Is just like associative array
+
+XML format, JSON format
+DOM Manipulation using JavaScript
+
+Lecture 9
+
+
+Understanding of Functions in JavaScript
+Anonymous Function
+Named Function
+When you create a function in JavaScript it is of type “Function”. You may use constructor approach to create a function. For example
+Var f = new Function(a,b,”return a+b”);
+In the above example we have created a function which is taking two parameters (a & b) and last parameter is body of our function. Variable “f” is pointing to newly created function object.
+So if function is also like an object, you may hold its reference in variable. It means you may add it in array, you may send it to another function as an argument etc.
+In a function this refers to the caller. It is a similar concept like we’ve in other languages.
+Understanding of Objects in JavaScript
+In JavaScript there is a reserved class keyword but it does nothing. It means you can’t created classes in JS like other OO languages.
+But JavaScript is OOP language. You use different tricks to achieve different behaviors of OO.
+In JS, top level type name is “Object”. You can create an instance of it by using two approaches 1) direct/literal approach 2) constructor approach
+Constructor Approach: var obj = new Object();
+Literal(direct approach): var obj = {};
+Above code will create an empty object and obj will be pointing to it. Now you may add new properties (data member & functions) in it by using 1) dot operator 2) key based syntax. In JS, objects are like associative arrays.
+obj.ID = 1; is similar to obj[“ID”] = 1;
+obj.Name = “ABC” is similar to obj[“Name”] = “ABC”;
+When you set a value to a property in JS, it see if there is any such property in object, if there is set value to that if not create a new property and then set.
+If you will try to get value from a property which is not part of object, you will get undefined as value.
+When you create object using ‘literal’ notation, you may also initial object with properties
+var obj = {ID: 1, Name:”ABC”,Age: 20};
+We also call this JavaScript Object Notation (JSON)
+And when we represent this in string format, we call it JSON string.
+So let’s say you have a JS (created by whatever approach), you can get JSON string from it using JSON.stringify(obj) function. And if you have JSON string, you can create JS object again by using JSON.parse(str);
+For example
+var obj = new Object();
+obj.ID = 10; obj.Age =20;
+var str = JSON.stringify(obj);
+str will contain “{ID:10,Age:20}” please note that this is string.
+var o = JSOn.parse(str);
+Here o is a variable which is pointing to an object. This object contains ID & Age as properties. You may access them using o.ID or o.Age for example.
+JSON format is very popular now a days for data representation. Many languages provide support to convert their objects into JSON format or convert JSON formatted string back to their object.
+XML is also a format and had been very popular in past for same purpose (representing data)
+JavaScript in Browser
+JavaScript is Used as Client side programming language in Browser
+window is root object in browser
+There is a type (constructor) available for every html element in browser For example
+For <html> there is HTMLHtmlElement
+For <div> there is HTMLDivElement
+When browser parses your html, it generates similar object tree using corresponding classes. This tree is call DOM (Document Object Model)
+document  object is used to play with DOM.
+document.getElementById()
+document.createElement()
+Normally JS was used in browser mainly for data validation (client side validation) but for last decade client side development is increased. Now clients are becoming “Thick Clients”. You get data from server using JS and then generates your HTML on client side.
+How Processing happens on web server
+Static Content: This is served as it is. Server knows which types of resources are to be considered as static resources. For example, HTML pages, JS, CSS, JPG, BMP, EXE.
+Dynamic Content: Some processing is done and then response is generated. Server knows which types of resources to be considered as dynamic resources. For example .PHP, .ASP, .ASPX, .JPG, .WCF
+Web Server prepares response (header + body). Header contains meta information(response status, server detail etc.). Body contains actual content (e.g. html).
+What happens on client side
+Once response (e.g. HTML) reaches on client side, browser parses <head> section and load all JS/CSS files mentioned in <head> section. Once head is loaded, it starts parsing <body> section. During parsing of body, if it finds any static resource declaration (e.g. <img, <script), it sends a separate HTTP request to download that content. Once whole <body> is parsed and DOM is created, DOMReady event is fired. And when all external resources (images, css, js etc.) are downloaded, Body Load event is fired.
+
+
+
+Lecture 10
+
+Array/Loop/Length property exercise
+More discussion about data types.
+== vs ===
+Client side storage mechanisms
+Persistent cookie  vs non persistent cookie
+localStorage vs sessionStorage
+setTimeout vs setInterval method
+
+
+Lecture 11 & 12
+
+Quiz#2 taken
+General discussion about jaascript
+Introduction to PHP
+Introduction to XAMP(LAMP,WAMP, Port changing, Default ports, etc.)
+How Processing happens on web server
+Static Content: This is served as it is. Server knows which types of resources are to be considered as static resources. For example, HTML pages, JS, CSS, JPG, BMP, EXE.
+Dynamic Content: Some processing is done and then response is generated. Server knows which types of resources to be considered as dynamic resources. For example .PHP, .ASP, .ASPX, .JPG, .WCF
+Web Server prepares response (header + body). Header contains meta information(response status, server detail etc.). Body contains actual content (e.g. html).
+What happens on client side
+Once response (e.g. HTML) reaches on client side, browser parses <head> section and load all JS/CSS files mentioned in <head> section. Once head is loaded, it starts parsing <body> section. During parsing of body, if it finds any static resource declaration (e.g. <img, <script), it sends a separate HTTP request to download that content. Once whole <body> is parsed and DOM is created, DOMReady event is fired. And when all external resources (images, css, js etc.) are downloaded, Body Load event is fired.
+Introduction to PHP
+Variable Declaration
+<?php tag
+Conditional statement
+Loops arrays variables etc
+$_GET,$_POST,$_Request
+Request methods
+GET
+POst
+DELETE
+PUT
+Utility functions and its use
+Print
+Echo
+Print_r
+Var_dump
+Empty
+Isset
+Num_args
+Get_args
+
+
+Lecture 13 & 14
+
+
+Phpmyadmin introduction
+Connection with mysql
+$_FILES
+Json_encode
+Exercises code review
+Stateless stateful protocol
+Mysqli methods (mysqli_connnect_error, die, mysqli_connect,mysqli_query,mysqli_fetch_assoc, etc)
+Jquery introduction
+Common jquery methods
+Ready
+selectors
+Remove
+Append
+Css
+Attr
+Click
+Clossest
+Bind
+Unbind
+Find
+One
+Addclass
+Removeclass
+Html,text,val
+Ajax calling (asynchronous hitting)
+Json
+
+
+
+Lecture 15 & 16
+
+General discussion
+Practice code discussion
+Revision
